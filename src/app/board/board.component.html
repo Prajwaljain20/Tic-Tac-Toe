@@ -1,0 +1,13 @@
+<h1 *ngIf="winner else notWinner"> Player {{ winner }} won the game!</h1>
+<ng-template #notWinner>
+    <h1 *ngIf="tie else game">Game Tied!</h1>
+    <ng-template #game>
+        <h1>Current Player: {{ player }}</h1>
+    </ng-template>
+</ng-template>
+<button (click)="newGame()">Start New Game</button>
+<main>
+    <app-square *ngFor="let val of squares; let i = index"
+    [value]="val" (click)="makeMove(i)" [ngClass]="{'selected': val !== null, 'winner': winningLine.includes(i) && winner !== null}" [disabled]="winner!==null">
+    </app-square>
+</main>

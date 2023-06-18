@@ -1,0 +1,17 @@
+header,footer{
+    height: 30px;
+    background: rgb(27, 11, 84);
+    margin: -8px;
+}
+header{
+    box-shadow: 0 3px 10px -6px blue;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+footer{
+    box-shadow: 0 -3px 10px -6px blue;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

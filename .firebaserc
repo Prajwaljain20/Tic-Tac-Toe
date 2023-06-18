@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "game-41400": {
+      "hosting": {
+        "ticTac": [
+          "tic-tac-toe-prajwal"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "game-41400"
+  }
+}

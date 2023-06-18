@@ -1,0 +1,41 @@
+button{
+    height: 175px;
+    width: 175px;
+    font-weight: 100;
+    font-size: 3em;
+}
+button:disabled{
+    color: black;
+}
+@media only screen and (max-width: 960px) {
+    button{
+        height: 150px;
+        width: 150px;
+        font-weight: 50;
+        font-size: 2em;
+    }
+}
+@media only screen and (max-width: 520px) {
+    button{
+        height: 100px;
+        width: 100px;
+        font-weight: 30;
+        font-size: 1.5em;
+    }
+}
+@media only screen and (min-width: 1700px) {
+    button{
+        height: 250px;
+        width: 250px;
+        font-weight: 300;
+        font-size: 4em;
+    }
+}
+@media only screen and (min-width: 3000px) {
+    button{
+        height: 350px;
+        width: 350px;
+        font-weight: 500;
+        font-size: 5em;
+    }
+}
